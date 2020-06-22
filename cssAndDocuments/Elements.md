@@ -59,8 +59,8 @@ To see how this works, let’s consider a CSS property, display.
 
 为了了解这是怎么工作的,我们来看看css的display属性.
 
-[!]("DISPLAY.png")
-[!]("DISPLAY1.png")
+![!]("DISPLAY.png")
+![!]("DISPLAY1.png")
 
 You may have noticed that there are a lot of values, only three of which I’ve even come close to mentioning: block, inline, and list-item. Most of these values will be dealt with elsewhere in the book; for example, grid and inline-grid will be covered in a separate chapter about grid layout, and the table-related values are all covered in a chapter on CSS table layout.
 
@@ -95,7 +95,7 @@ No matter what you do to the display roles via CSS, this is not legal in HTML.
 While changing the display roles of elements can be useful in HTML documents, it becomes downright critical for XML documents. An XML document is unlikely to have any inherent display roles, so it’s up to the author to define them. For example, you might wonder how to lay out the following snippet of XML:
 在HTML中修改元素的显示属性很有用,这对于xml文档也很重要.一个xml文档没有默认的显示角色,所以只能作者去定义他们.例如,你可能要想知道如何去对下面的xml文件布局:
 
-``javascript
+```
 <book>
  <maintitle>Cascading Style Sheets: The Definitive Guide</maintitle>
   <subtitle>Third Edition</subtitle>
@@ -112,13 +112,13 @@ While changing the display roles of elements can be useful in HTML documents, it
          <pubdate>October 2007</pubdate>
           <isbn type="print">978-0-596-51505-8</isbn>
      </book>
-``
+```
 
 Since the default value of display is inline, the content would be rendered as inline text by default, as illustrated in Figure 1-2. This isn’t a terribly useful display.
 
 因为默认想显示属性时行内,所以默认会显示为内联文本.如图1-2中所示.这不是一个很有用的显示.
 
-[!]("DISPLAY.png")
+![]("DISPLAY.png")
 
 You can define the basics of the layout with display:
 
@@ -136,7 +136,7 @@ This fundamental ability to affect display roles makes CSS highly useful in a va
 
 改变显示角色的能力让css在很多场合都很有用.我们以前面的规则为起点,然后为了更好的视觉效果添加一点其他的样式,最后得到图1-3的显示结果
 
-[!]("1-3.png")
+![!]("1-3.png")
 
 Before learning how to write CSS in detail, we need to look at how one can associate CSS with a document. After all, without tying the two together, there’s no way for the CSS to affect the document. We’ll explore this in an HTML setting since it’s the most familiar.
 
